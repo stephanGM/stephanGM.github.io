@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Embedded Neural Net</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /><!-- Used to make @media work w iphone -->
+    <meta charset="UTF-8">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/grid12.css" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" />
+    </head>
+    <body>
+        <div class="box">
+            <!-- menu -->
+            <ul class ="row header" style="text-align:left;">
+                <li style="padding-right:10px;">
+                    <a class = "title" href="../../index.html">SGM</a> 
+                    <li class="work_title">Embedded Neural Network</li>
+
+                </li>
+            </ul> <!-- menu end -->
+
+            <img src="../../img/work/neural_net/myRio.jpeg" class ="bg"> <!-- background image -->
+            <div class="row content">
+            <!-- page content -->
+            <div class = "project_wrapper">
+                <div class="project">
+                    <p>
+                        This Project was for an embedded systems course at McGill (ECSE 421). <br>
+                        If you're interested you can 
+                        <a target="_blank" href="../../file/tay-neural-network.pdf"> read the report </a> or if you have access to labView,
+                        <a taget="_blank" href="https://github.com/stephanGM/labView_neural_net"> view the files</a>.<br>
+                        The objective achieved was to create a multi-layered neural network that could be trained to know its orientation in XYZ space. <br>
+                        This was done on National Instrument's myRio board with labView, using the accelerometer data.
+                        The neural net was 3 layers deep (1 input, 1 output, 1 hidden) and could easily and quickly be trained using backpropagation. <br>
+                    </p>
+                    <p>
+                        The basic neural net used:
+                    </p>
+                    <img src="../../img/work/neural_net/layers.png">
+                    <p>
+                        The design for a "neuron" in this network as well as a basic understanding of feedforward and backpropagation was thanks to <a target="_blank" href="https://cs.stanford.edu/~quocle/tutorial1.pdf">this</a> tutorial. Furthermore, Matt Mazur's <a target="_blank" href="https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/"> backpropagation example</a> was also extremely useful when it came to implementing the algorithm.
+                    </p>
+                    <p>
+                        Artificial neuron based on the sigmoid function:
+                    </p>
+                    <img src="../../img/work/neural_net/neuron.png">
+                    <img src="../../img/work/neural_net/neuron.gif">
+                    <p>
+                        The design space offered by the myRio was also explored to determine a paretto optimal point. This was done through testing performance of code sections accelerated on the FPGA as well as using different number representations. The results can seen in the <a target="_blank" href="../../file/tay-neural-network.pdf">project report</a> which shows that the best result was achieved using fixed point representation on the processor. <br>
+                    </p>   
+                </div>
+            </div>
+            </div>
+
+        </div> <!--end box-->
+
+    </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>SGM</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /><!-- Used to make @media work w iphone -->
+    <meta charset="UTF-8">
+    <!--CSS -->
+    <link href="css/grid12.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+     <!-- page icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    </head>
+    <body>
+        <div class = "box">
+            <!-- background image -->
+            <img src="img/bricks.jpeg" class ="bg">
+            <!-- <img src="img/view.png" class ="bg"> -->
+        
+            <!-- ================================ -->
+            <!--               menu               -->
+            <!-- ================================ -->
+            <ul class ="row header top_menu" style="text-align:left;">
+                <li style="padding-right:10px;">
+                    <a class = "title" href="index.html">SGM</a>
+                </li>
+                <li>
+                    <li><a class ="menu_home active" href="#"><b>/home</b></li> 
+                    <li><a class ="menu_work" href="#"><b>/work</b></a></li>
+                    <li><a class ="menu_contact" href="#" ><b>/contact</b></a></li>
+                </li>
+                <!--<li>
+                    <li style="float:right"><a target="_blank" href="#"><img class="thumb_link" src="img/ico/linkedin.png"></a></li> 
+                    <li style="float:right"><a target="_blank" href="https://github.com/stephanGM"><img class="thumb_link" src="img/ico/github.png"></a></li>
+                    <li style="float:right"><a target="_blank" href="#"><img class="thumb_link" src="img/ico/cv.png"></a></li>
+                </li>-->
+            </ul> <!-- menu end -->
+
+
+            <!-- ================================ -->
+            <!--               index              -->
+            <!-- ================================ -->
+
+            <div class = "index">
+                <a href="#"> <!-- center/welcome text -->
+                    <p style="white-space: pre-wrap;" class="splash_text"><br>  Hello  <br>  Bonjour  <br>  你好  <br>  Здравствуйте  
+                    </p>
+                </a>
+            </div> <!-- index end -->
+
+            <canvas id="tv"></canvas>
+            <div class="row content home">
+       
+                <!-- ================================ -->
+                <!--                work              -->
+                <!-- ================================ -->
+                <div class= "work">
+                    <!-- sub-menu for viewing options -->
+                    <div class="sub_menu_wrapper">
+                        <div class="sub_menu">
+                            <span><a href="#" class="tech_click"> <i>Tech</i></a></span>
+                            <span><a href="#" class="photo_click"><i>Photo</i></a></span>
+                        </div>
+                        <hr>
+                    </div><!-- sub menu ends -->
+
+                    <!-- content after sub menu -->
+
+                    <!-- tech content -->
+                    <div class = "work_tech">
+                        <a target="_blank" href="work/tech/mouse.html" class="work_title">Microprocessor Mouse</a>
+                        <hr>
+                        <a target="_blank" href="work/tech/mouse.html">
+                            <p>
+                                The STM32F4 Discovery board was made into a USB compatible mouse running on a real-time operating system.
+                                This was acheived by using the pitch and roll from the on board accelerometer for the movement and input from push buttons connected on GPIO as clicks.
+                            </p>
+                        </a>
+
+                        <a target="_blank" href="work/tech/embedded-neural-net.html" class="work_title">Embedded Neural Net</a>
+                        <hr>
+                        <a target="_blank" href="work/tech/embedded-neural-net.html">
+                            <p>
+                                National Instrument's myRio platform was used to implement a neural network which could, after training,
+                                determine its orientation in XYZ space. 
+                                The programming was done in G (labView) and various tests were performed in order to find a paretto optimal 
+                                design.
+                            </p>
+                        </a>
+                        
+                        <a target="_blank" href="work/tech/rotary-encoder.html" class="work_title">Android Rotary Encoder Service</a>
+                        <hr>
+                        <a target="_blank" href="work/tech/rotary-encoder.html">
+                            <p>
+                                The rotary encoder service was designed as a portable background service that can interface a rotary encoder using quadrature
+                                with any Android device's GPIO pins, broadcasting the directionality of rotation and increments for any application/service to pick
+                                up on and use. 
+                            </p>
+                        </a>
+                        
+                        <a target="_blank" href="work/tech/push-button.html" class="work_title">Android Push Button Service</a>
+                        <hr>
+                        <a target="_blank" href="work/tech/push-button.html">
+                            <p>
+                                The push button service was designed as a portable background service that can interface a push button
+                                with any Android device's GPIO pins. It is capable of detecting short presses, long presses and double presses. 
+                                It broadcasts this input in order for any application or service to pick up on and use.
+                            </p>
+                        </a>
+
+                        <a target="_blank" href="work/tech/icosablossom.html" class="work_title">Icosablossom (3D Sculpture)</a>
+                        <hr>
+                        <a target="_blank" href="work/tech/icosablossom.html">
+                            <p>
+                                3D printing was a hobby of mine for some time. I like the freedom the design space provides.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- photo content -->
+                    <div class = "work_photo">
+                        <p>
+                            coming soon
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>                               
+                            </div>                         
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>                                
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>                                
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                <a class="thumbnail" target="_blank" href="#">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+           
+        
+                </div> <!-- end work -->
+
+
+                <!-- ================================ -->
+                <!--             contact              -->
+                <!-- ================================ -->
+                <div class = "contact"> 
+                        <div class='signup'>
+                            <form>
+                            <input type='text' placeholder='Name'  />
+                            <input type='text' placeholder='Email'  />
+                            <textarea type="message" cols="80" rows="10" placeholder = 'Message'></textarea>
+                            <div class="g-recaptcha" data-sitekey="YOUR_KEY" data-callback="correctCaptcha"></div>
+                            <input type='submit' value='Send' />
+                            </form>
+                            
+                          
+                        </div>
+                </div> <!-- end contact -->
+            </div> <!--end row content-->
+        </div> <!--end box-->
+         <!-- the necessary script srcs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/workDisplay.js"></script>
+        <script type="text/javascript" src="js/indexDisplay.js"></script>
+        <script type="text/javascript" src="js/noise.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        
+    </body>
+</html>

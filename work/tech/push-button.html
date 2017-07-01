@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Android Push Button</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /><!-- Used to make @media work w iphone -->
+    <meta charset="UTF-8">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/grid12.css" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" />
+    </head>
+    <body>
+        <div class="box">
+            <!-- menu -->
+            <ul class ="row header" style="text-align:left;">
+                <li style="padding-right:10px;">
+                    <a class = "title" href="../../index.html">SGM</a> 
+                    <li class="work_title">Android Push Button Service</li>
+
+                </li>
+            </ul> <!-- menu end -->
+
+            <img src="../../img/work/push_button/pb.png" class ="bg"> <!-- background image -->
+            <div class="row content">
+            <!-- page content -->
+                <div class = "project_wrapper">
+                    <div class="project">
+                        <p>
+                            While working on an internship I had to connect a number of push button to an embedded android device 
+                            (<a target="_blank" href="https://revotics.com/warp">WaRP board</a>)
+                            to use as an input.<br> 
+                            The board uses a ARM cortex Freescale i.MX 6 SoloLite processor. A brief overview of what the board has to offer can be seen 
+                            <a target="_blank" href="http://www.cnx-software.com/2014/07/25/freescale-warpboard-reference-platform-for-wearables-is-now-available-for-pre-order/">here</a>.<br>
+                            In order to do so, I made this system service which runs in the background 
+                            and reads from any number of push buttons connected over GPIO. <br>
+                            The service is capable of detecting stardard button presses (single, double and long).
+                        </p>
+
+                        <p>
+                            The service is available on <a target="_blank" href="https://github.com/stephanGM/buttonService">Github</a>. <br>
+                            The documentation is available on Github as well but can also be found <a target="_blank" href="../../file/push-button-service.pdf">here</a>.<br>
+                            The input is read from GPIO using a thread written in C which callsback to Java through the Java Native Interface (JNI). 
+                        </p>
+                        <p>
+                            Software block diagram:
+                        </p>
+                        <img src="../../img/work/push_button/pb_block.png">
+                        <p>
+                            The button I used, I debounced with hardware using the following low pass network:
+                        </p>
+                        <img src="../../img/work/push_button/debounce.png">
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--end box-->
+
+    </body>
+</html>

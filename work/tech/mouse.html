@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>MicroP Mouse</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" /><!-- Used to make @media work w iphone -->
+    <meta charset="UTF-8">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/grid12.css" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" />
+    </head>
+    <body>
+        <div class="box">
+            <!-- menu -->
+            <ul class ="row header" style="text-align:left;">
+                <li style="padding-right:10px;">
+                    <a class = "title" href="../../index.html">SGM</a> 
+                    <li class="work_title">Microprocessor Mouse</li>
+
+                </li>
+            </ul> <!-- menu end -->
+
+            <img src="../../img/work/mouse/stm32f4.jpeg" class ="bg"> <!-- background image -->
+            <div class="row content">
+            <!-- page content -->
+                <div class = "project_wrapper">
+                    <div class="project">
+                        <p>
+                            This project was developed for my Micro Processors class at McGill University (ECSE 426).<br>
+                            The goal was to turn a 32-bit ARM cortex MCU board 
+                            (<a target="_blank" href="http://www.st.com/en/evaluation-tools/stm32f4discovery.html"> STM32F4 Discovery</a>) 
+                            into a mouse which used the USB interface to communicate with the computer, and then to have it function wirelessly over bluetooth.<br>
+                            The report on mainly the bluetooth functionlity of the system can be seen <a target="_blank" href="../../file/final_report_microp.pdf">here</a>.<br>
+                            The board was programmed using <b>embedded C</b>.
+                        </p>
+                        <p>
+                            MCU Board - STM32F4 Discovery:
+                        </p>
+                        <img src="../../img/work/mouse/discovery_board.png">
+                        <p>
+                            <br>
+                            This was acheieved by using the pitch and roll data from the accelerometer to move the mouse up and down and side to side. 
+                            <br>
+                            The buttons were attached via GPIO and configured such that the mouse could support all standard presses (single, double, long). 
+                            <br>
+                            Once the mouse functionality was tested, itegration of wireless operation over bluetooth begain. 
+                            This used one board as a sender and another as a receiver, 
+                            communicating with two of TI's' <a target="_blank" href="http://www.ti.com/product/cc2500">CC2500</a>.
+                        </p>
+                        <p>
+                            Sender Block Diagram:
+                        </p>
+                             <img src="../../img/work/mouse/sender_pinout.png">
+                        <p>
+                            Sender Board (wireless):
+                        </p>
+                             <img src="../../img/work/mouse/mouse_sender.png">
+                        <p>
+                            Receiver Board (connected to computer):
+                        </p>
+                             <img src="../../img/work/mouse/mouse_receiver.png">
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--end box-->
+
+    </body>
+</html>
