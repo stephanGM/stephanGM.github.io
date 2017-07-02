@@ -297,6 +297,7 @@ div.g-recaptcha{
     color: white;
     font-weight: 400;
     font-size: 1em;
+    display: none;
 }
 
 [type='text']:focus {
