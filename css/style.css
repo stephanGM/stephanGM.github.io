@@ -252,6 +252,11 @@ input{
     font-size: inherit;
 }
 
+div.g-recaptcha{
+   margin: 0 auto;
+   width: 304px;
+}
+
 [type=text] {
     background-color: rgba(0,0,0,0);
     display: block;
@@ -277,7 +282,7 @@ input{
     height:200px;
     line-height: 45px;  
     resize: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1em;
     color: rgba(185,197,187,0.8);
     border-color: rgba(185,197,187,0.8);
