@@ -3,7 +3,7 @@ var correctCaptcha = function(response) {
             alert("captcha failed")
         }else{ // captcha solved
             alert(response);
-            $(input).fadeIn('normal');
+            $("input[type='submit']").fadeIn('normal'); // not working at present
         }
        
     };
