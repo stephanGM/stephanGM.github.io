@@ -88,7 +88,8 @@ li{
 
 .thumb_link{
     max-height:25px;
-    max-width: 25px;
+    max-width: 30px;
+    margin-top: 2px;
     padding-left: 3px;
     padding-right: 3px;
 }
