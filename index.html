@@ -14,7 +14,7 @@
     <body>
         <div class = "box">
             <!-- background image -->
-            <img src="img/bricks.jpeg" class ="bg">
+            <img src="img/peone.jpg" class ="bg">
             <!-- <img src="img/view.png" class ="bg"> -->
         
             <!-- ================================ -->
@@ -29,11 +29,11 @@
                     <li><a class ="menu_work" href="#"><b>/work</b></a></li>
                     <li><a class ="menu_contact" href="#" ><b>/contact</b></a></li>
                 </li>
-                <!--<li>
+                <li>
                     <li style="float:right"><a target="_blank" href="#"><img class="thumb_link" src="img/ico/linkedin.png"></a></li> 
                     <li style="float:right"><a target="_blank" href="https://github.com/stephanGM"><img class="thumb_link" src="img/ico/github.png"></a></li>
                     <li style="float:right"><a target="_blank" href="#"><img class="thumb_link" src="img/ico/cv.png"></a></li>
-                </li>-->
+                </li>
             </ul> <!-- menu end -->
 
 
@@ -176,13 +176,15 @@
                 <!-- ================================ -->
                 <div class = "contact"> 
                         <div class='signup'>
-                            <form>
+                            <form id="form_sub">
                             <input type='text' placeholder='Name'  />
                             <input type='text' placeholder='Email'  />
                             <textarea type="message" cols="80" rows="10" placeholder = 'Message'></textarea>
                             <div class="g-recaptcha" data-sitekey="6LezmicUAAAAAFS12b8JP2inXOn_RLMzI2nb6_Ha" data-callback="correctCaptcha"></div>
-                            <input type='submit' value='Send' />
+                            <div id = "place_holder" ></div>
+                            <!--<input type='submit' value='Send' />-->
                             </form>
+                            <!--<button type="submit" form="form_sub" value="Submit">Submit</button>-->
                             
                           
                         </div>

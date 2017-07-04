@@ -3,6 +3,7 @@ var correctCaptcha = function(response) {
         alert("captcha failed")
     }else{ // captcha solved
         $(".g-recaptcha").hide('normal');
-        $("input[type='submit']").fadeIn(); 
+        $('#place_holder').replaceWith('<input type='/submit/' value=/'Send/' />');
+        // $("input[type='submit']").fadeIn(); 
     }      
 };
