@@ -24,7 +24,7 @@ $(function(){
             //     }]
             // },
             beforeSend: function(xhr) {
-                    xhr.setRequestHeader("Authorization", "49fdd0917fb89e09dab61dfb9834432981b1c307"); 
+                    xhr.setRequestHeader("Authorization", "0abff4032MYAPIKEY28237aabaddff20758587"); 
                     // xhr.setRequestHeader("contentType", "application/json");
             },
             success: function(data){
