@@ -18,10 +18,10 @@ $(function(){
                     },
                 }]
             },
-            beforeSend: function(xhr) {
-                    xhr.setRequestHeader("Authorization", "0abff4032MYAPIKEY28237aabaddff20758587"); 
-                    // xhr.setRequestHeader("contentType", "application/json");
-            },
+            // beforeSend: function(xhr) {
+            //         xhr.setRequestHeader("Authorization", "0abff4032MYAPIKEY28237aabaddff20758587"); 
+            //         // xhr.setRequestHeader("contentType", "application/json");
+            // },
             success: function(data){
                 alert(data);
             }
