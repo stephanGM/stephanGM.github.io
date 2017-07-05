@@ -3,21 +3,21 @@ var address = CryptoJS.AES.decrypt("U2FsdGVkX1/txqO1fIyvzU7fdnIu/D1v+AMscFHGeJIG
 $(function(){
     $("input[type=submit]").click(function(){
         var request = $.ajax({
-            url: 'https://api.sparkpost.com/api/v1/transmissions',
-            type: 'XPOST',
-            contentType: "application/json",
-            data: {
-                "content": {
-                    "email":"postmaster@sstephangm.com",
-                    "subject": "Thundercats are GO!!!",
-                    "text": "Sword of Omens, give me sight BEYOND sight"
-                },
-                "recipients": [{
-                    "address":{
-                        "email": "s.greto-mcgrath@protonmail.com" 
-                    },
-                }]
-            },
+            // url: 'https://api.sparkpost.com/api/v1/transmissions',
+            // type: 'XPOST',
+            // contentType: "application/json",
+            // data: {
+            //     "content": {
+            //         "email":"postmaster@sstephangm.com",
+            //         "subject": "Thundercats are GO!!!",
+            //         "text": "Sword of Omens, give me sight BEYOND sight"
+            //     },
+            //     "recipients": [{
+            //         "address":{
+            //             "email": "s.greto-mcgrath@protonmail.com" 
+            //         },
+            //     }]
+            // },
             // beforeSend: function(xhr) {
             //         xhr.setRequestHeader("Authorization", "0abff4032MYAPIKEY28237aabaddff20758587"); 
             //         // xhr.setRequestHeader("contentType", "application/json");
