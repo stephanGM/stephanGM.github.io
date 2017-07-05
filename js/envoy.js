@@ -4,25 +4,20 @@ $(function(){
     $("input[type=submit]").click(function(){
         var request = $.ajax({
             url: 'https://api.sparkpost.com/api/v1/transmissions',
-            type: 'POST',
-            dataType: 'json',
+            type: 'XPOST',
             contentType: "application/json",
-            // data: {
-            //     "options": {"sandbox": "true"},
-            //     "content": {
-            //         "from":{  
-            //             "name":"Testing Email",
-            //             "email":"sandbox@sparkpostbox.com"
-            //         },
-            //         "subject": "Thundercats are GO!!!",
-            //         "text": "Sword of Omens, give me sight BEYOND sight"
-            //     },
-            //     "recipients": [{
-            //         "address":{
-            //             "email": "s.greto-mcgrath@protonmail.com" 
-            //         },
-            //     }]
-            // },
+            data: {
+                "content": {
+                    "email":"postmaster@sstephangm.com",
+                    "subject": "Thundercats are GO!!!",
+                    "text": "Sword of Omens, give me sight BEYOND sight"
+                },
+                "recipients": [{
+                    "address":{
+                        "email": "s.greto-mcgrath@protonmail.com" 
+                    },
+                }]
+            },
             beforeSend: function(xhr) {
                     xhr.setRequestHeader("Authorization", "0abff4032MYAPIKEY28237aabaddff20758587"); 
                     // xhr.setRequestHeader("contentType", "application/json");
